@@ -10,14 +10,14 @@
         <p><span class="text-style-1">Bots be gone!</span> <span class="text-style-2">Curator uses Ai to engage with actual humans; delivering meaningful followers, likes, and insights.</span></p>
     </div>
     <contact></contact>
-    <div>
+   <!--  <div>
         <div class="leftwave">
             <img src="https://s3.us-east-2.amazonaws.com/social-curator/leftwave.svg" class="leftwave">
         </div>
         <div class="rightwave">
             <img src="https://s3.us-east-2.amazonaws.com/social-curator/rightwave.svg" class="rightwave">
         </div>
-    </div>
+    </div> -->
 
 </div>
 
@@ -26,10 +26,12 @@
 <script>
 
 import contact from '../contact/contact';
+import siteHeader from '../SiteHeader';
 export default {
     name: 'home',
     components: {
         contact,
+        siteHeader,
     },
     data() {
         return {}
@@ -42,7 +44,7 @@ export default {
 
 .hero {
     background-color: #4c31b5;
-    height: 150vh;
+    height: 100%;
     width: 100%;
     text-align: center;
 }

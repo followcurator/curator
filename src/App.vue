@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <!-- <contact-modal></contact-modal> -->
-    <!-- <site-header></site-header> -->
+    <site-header>things</site-header>
     <router-view></router-view>
-    <!-- <site-footer></site-footer> -->
+    <site-footer></site-footer>
   </div>
 </template>
 
 <script>
+import siteHeader from '@/components/SiteHeader';
+import siteFooter from '@/components/SiteFooter';
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    siteHeader,
+    siteFooter,
+  },
 }
 </script>
 
@@ -19,8 +24,7 @@ export default {
     font-family: 'Nunito', sans-serif;
     margin: 0px;
     padding: 0px;
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     position: relative;
-    /*padding-bottom: 14.8rem;*/
   }
 </style>
