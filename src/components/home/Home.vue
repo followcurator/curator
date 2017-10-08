@@ -40,7 +40,8 @@ export default {
 
 </script>
 
-<style scoped>
+<style  lang='scss'>
+ @import '../../styles/_variables.scss';
 
 .hero {
     background-color: #4c31b5;

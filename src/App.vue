@@ -19,12 +19,12 @@ export default {
 </script>
 
 <style>
+@import './styles/main.scss';
 #app {
-    height: 150vh;
-    font-family: 'Nunito', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    min-height: 100vh;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
   }
 </style>
