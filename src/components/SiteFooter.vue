@@ -1,19 +1,20 @@
-<style scoped>
+<style lang="scss">
+
 
 </style>
 
 <template>
-    <div>footer</div>
+	<div class="small-logo"></div>
 
 </template>
 
 <script>
 
 export default {
-    name: 'siteFooter',
+    name: 'sitefooter',
     data() {
         return {
-
+           
         }
     }
 }

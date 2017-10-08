@@ -1,7 +1,6 @@
 <template>
 
 <div class="hero">
-    <div class="wrapper"></div>
     <div class="curator-logo"></div>
     <div class="shaping-your-social">
         <p>Shaping your social empire through the power of Ai.</p>
@@ -10,15 +9,11 @@
         <p><span class="text-style-1">Bots be gone!</span> <span class="text-style-2">Curator uses Ai to engage with actual humans; delivering meaningful followers, likes, and insights.</span></p>
     </div>
     <contact></contact>
-   <!--  <div>
-        <div class="leftwave">
-            <img src="https://s3.us-east-2.amazonaws.com/social-curator/leftwave.svg" class="leftwave">
-        </div>
-        <div class="rightwave">
-            <img src="https://s3.us-east-2.amazonaws.com/social-curator/rightwave.svg" class="rightwave">
-        </div>
-    </div> -->
-
+    <div class="social-icons">
+        <a target="_blank" href="https://www.instagram.com/vestfinancial/?hl=en" class="social-link instagram"></a>
+            <a target="_blank" href="https://www.facebook.com/askvest/" class="social-link facebook"></a>
+        <a target="_blank" href="https://twitter.com/vestfinancial" class="social-link twitter"></a>
+    </div>
 </div>
 
 </template>
@@ -45,44 +40,73 @@ export default {
 
 .hero {
     background-color: #4c31b5;
-    height: 100%;
-    width: 100%;
     text-align: center;
+    margin-top: 15rem;
 }
 
-.wrapper {
-    height: 200px;
+.social-link {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 4.7rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+
+
+}
+
+.instagram {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+ background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/instagram.svg');
+}
+
+.facebook{
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+    background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/facebook.svg');
+
+}
+
+.twitter {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+ background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/twitter.svg');
 }
 
 .curator-logo {
     display: block;
-    width: 317px;
-    height: 52px;
+    width: 31.7rem;
+    height: 5.2rem;
     object-fit: contain;
     text-align: center;
     margin: auto;
-    background-image: url('https://s3.us-east-2.amazonaws.com/social-curator/curator-logo.svg');
+    background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/curator-logo.svg');
 }
 
 .shaping-your-social {
-
+    margin-top: 3rem;
     display: inline-block;
-    width: 600px;
-    height: 92px;
+    width: 60rem;
+    height: 9.2rem;
     font-family: Nunito;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 200;
     line-height: 1.15;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     color: #ffffff;
 }
 
 .bots-be-gone-curator {
-  margin-top: 29px;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right:auto;
-    width: 500px;
-    height: 48px;
+    width: 50rem;
+    height: 4.8rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -102,21 +126,5 @@ export default {
 
 }
 
-.leftwave {
-    width: 1440px;
-    /*display: inline;*/
-    height: 701.2px;
-    object-fit: contain;
-    background-image: linear-gradient(114deg, #835fdc, #4c31b5);
-}
-
-.rightwave {
-    /*display: inline-block;*/
-    width: 1440px;
-    height: 558.4px;
-    object-fit: contain;
-    background-image: linear-gradient(110deg, #835fdc, #4c31b5);
-    box-shadow: 0 0 120px 0 rgba(0, 0, 0, 0.1);
-}
 
 </style>
