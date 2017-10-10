@@ -86,6 +86,7 @@ export default {
 .input-label{
     position: absolute;
     left: 0px;
+    
 }
 // .email-input {
 //     width: 32.8rem;
