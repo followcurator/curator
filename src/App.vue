@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <reserve-modal></reserve-modal>
     <site-header>things</site-header>
     <router-view></router-view>
     <site-footer></site-footer>
@@ -9,11 +10,13 @@
 <script>
 import siteHeader from '@/components/SiteHeader';
 import siteFooter from '@/components/SiteFooter';
+import reserveModal from '@/components/ReserveModal';
 export default {
   name: 'app',
   components: {
     siteHeader,
     siteFooter,
+    reserveModal
   },
 }
 </script>

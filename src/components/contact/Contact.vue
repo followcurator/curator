@@ -52,8 +52,14 @@ export default {
     margin-top: 2rem;
     font-family: Nunito;
     position: relative;
-    width: 32.8rem;
+    width: 35rem;
     height: 4.5rem;
+    text-align: center;
+    -webkit-transition: height .35s ease-in-out;
+    transition: hieght .35s ease-in-out;
+    &:hover{
+        height: 75px;
+    }
 
 }
 
@@ -62,7 +68,7 @@ export default {
       font-weight:normal;
       position:absolute;
       pointer-events:none;
-      left:35rem;
+      left: 2rem;
       top:10px;
       transition:0.2s ease all; 
       -moz-transition:0.2s ease all; 
@@ -79,42 +85,30 @@ export default {
 
 
 .email-input {
+    position: relative;
     width: 100%;
     height: 100%;
+    border: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #000000;
+    box-shadow: 0 10px 15px 0 rgba(31, 32, 34, 0.3), 0 0 5px 0 rgba(31, 32, 34, 0.15);
+    &:focus{
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 30px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
+        border: solid 1px #1ab640;
+    }
 }
-
-.input-label{
-    position: absolute;
-    left: 0px;
-    
-}
-// .email-input {
-//     width: 32.8rem;
-//     height: 4.5rem;
-//     border: none;
-//     border-radius: 2px;
-//     background-color: #ffffff;
-    
-//     font-size: 16px;
-//     font-weight: 300;
-//     letter-spacing: 0.2px;
-//     text-align: left;
-//     color: #000000;
-//     padding-left: 22px;
-//     box-shadow: 0 10px 15px 0 rgba(31, 32, 34, 0.3), 0 0 5px 0 rgba(31, 32, 34, 0.15);
-//     &:focus{
-//         height: 75px;
-//         // border-radius: 2px;
-//         // background-color: #ffffff;
-//         // box-shadow: 0 30px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
-//         // border: solid 1px #1ab640;width: 200rem;
-//     }
-// }
 
 
 
 .reserve-button {
-    margin-top: 2.1rem;
+    margin-top: 1rem;
     border-style: none;
     width: 35rem;
     height: 5.5rem;
