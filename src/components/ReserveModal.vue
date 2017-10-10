@@ -3,11 +3,47 @@
       <div class="modal-wrapper">
         <div class="modal-container">
           <div class="modal-header">
-            <div class="small-logo"></div>
+            <div class="small-logo logo-shadow"></div>
           </div>
           <div class="modal-body">
+            <div class="people-ahead-cont">
+                <h2 class="people-ahead-text">8,465,903 People ahead of you</h2>
+                </div>
+                <div class="people-behind-cont"> 
+                <p class="people-behind-text">1,560 People behind you</p>
+            </div>
+            
+            <div class="admit-one-cont">
+                <div class="admit-one-image">
+                    <img src="https://s3.us-east-2.amazonaws.com/follow-curator/ticket%403x.png">
+                </div>
+                <p>This reservation is held for [%usergiven_email%]. Is this not you?</p> 
+            </div>
+            <div class="line-break"></div>
+            <div class="priority-access-cont">
+                <h1>Interested in priority access?</h1>
+                <p>Get early be referring your friends. The more friends that join, the sooner you’ll get access.</p>
+            </div>
           </div>
           <div class="modal-footer">
+            <div class="social-links-cont">
+                <div class="social-box">
+                    
+                </div>
+                 <div class="social-box">
+                    
+                </div>
+                 <div class="social-box">
+                    
+                </div>
+                 <div class="social-box">
+                    
+                </div>
+            </div>
+            <div class="unique-link-cont">
+                <h3>Or share this unique link:</h3>
+                <p>https://www.curator.com/#%link%#</p>
+            </div>
           </div>
         </div>
       </div>
@@ -62,8 +98,48 @@ export default {
     padding-top: .62rem;
 }
 
+.people-ahead-cont{
+    width: 607px;
+    height: 57px;
+    margin: auto;
+.people-ahead-text{
+    font-family: Nunito;
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #ffffff;
+    }
+}
+
+.people-behind-cont{
+    width: 196px;
+    height: 22px;
+    margin: auto;
+    .people-behind-text{
+        font-family: OpenSans;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    }
+}
 
 
+
+.admit-one-image {
+    // padding-top-top: 1rem;
+     width: 198px;
+    height: 88px;
+    margin: auto;
+    img{
+        width: 100%;
+    object-fit: contain;
+    }
+}
+.logo-shadow{
+    // background-color: #ffffff;
+    box-shadow: 0 5px 26px 0 #ffffff, 0 6px 5px 3px rgba(72, 46, 174, 0.5), 0 3px 0 0 rgba(0, 0, 0, 0.1);
+
+}
 
 /*
  * The following styles are auto-applied to elements with
