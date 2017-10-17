@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <reserve-modal></reserve-modal>
+    <reserve-modal v-show="false" @close="showModal=false"></reserve-modal>
     <site-header>things</site-header>
     <router-view></router-view>
     <site-footer></site-footer>
@@ -18,6 +18,9 @@ export default {
     siteFooter,
     reserveModal
   },
+ data: {
+    showModal: false
+  }
 }
 </script>
 

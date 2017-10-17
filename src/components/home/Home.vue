@@ -41,7 +41,7 @@ export default {
 .hero {
     background-color: #4c31b5;
     text-align: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .social-link {
