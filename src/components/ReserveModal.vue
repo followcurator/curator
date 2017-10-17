@@ -7,36 +7,45 @@
           </div>
           <div class="modal-body">
             <div class="people-ahead-cont">
-                <h2 class="people-ahead-text">8,465,903 People ahead of you</h2>
+                <h2 class="people-ahead-text"><span class="bold">8,465,903</span> People ahead of you</h2>
                 </div>
                 <div class="people-behind-cont"> 
-                <p class="people-behind-text">1,560 People behind you</p>
+                <p class="people-behind-text alt-font"><span class="bold">1,560</span> People behind you</p>
             </div>
             
             <div class="admit-one-cont">
                 <div class="admit-one-image">
                     <img src="https://s3.us-east-2.amazonaws.com/follow-curator/ticket%403x.png">
                 </div>
-                <p>This reservation is held for [%usergiven_email%]. Is this not you?</p> 
+                <p class="reservation-text open-sans">This reservation is held for [%usergiven_email%]. Is this not you?</p> 
             </div>
             <div class="line-break"></div>
             <div class="priority-access-cont">
-                <h1>Interested in priority access?</h1>
-                <p>Get early be referring your friends. The more friends that join, the sooner you’ll get access.</p>
+
+                <h1 class="priority-access-text">Interested in priority access?</h1>
+                <p class="priority-access-text-sub">Get early be referring your friends. The more friends that join, the sooner you’ll get access.</p>
             </div>
           </div>
           <div class="modal-footer">
             <div class="social-links-cont">
                 <div class="social-box">
+                  <div class="facebook"></div>
+                  <div class="social-text">share</div>
                     
                 </div>
                  <div class="social-box">
+                     <div class="twitter"></div>
+                  <div class="social-text">tweet</div>
+                    
+                </div>
+                  <div class="social-box">
+                     <div class="email"></div>
+                  <div class="social-text">share</div>
                     
                 </div>
                  <div class="social-box">
-                    
-                </div>
-                 <div class="social-box">
+                     <div class="instagram"></div>
+                  <div class="social-text">share</div>
                     
                 </div>
             </div>
@@ -75,16 +84,20 @@ export default {
   display: table;
   transition: opacity .3s ease;
   text-align: center;
+
 }
 
 .modal-wrapper {
+  // margin-top: 11.2rem;
+  // margin-bottom: 11.2rem;
+
   display: table-cell;
   vertical-align: middle;
 }
 
 .modal-container {
-  height: 60rem;
-  width: 80rem;
+  height: 90%;
+  width: 85rem;
   margin: auto;
   background-color: #593cbe;
   border-radius: 2px;
@@ -93,7 +106,18 @@ export default {
 
 }
 
+.reservation-text{
+  width: 260px;
+  height: 38px;
+  font-family: OpenSans;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 2.5rem;
 
+}
 .modal-header {
     padding-top: .62rem;
 }
@@ -115,32 +139,114 @@ export default {
     width: 196px;
     height: 22px;
     margin: auto;
+    margin-top: 1rem;
     .people-behind-text{
-        font-family: OpenSans;
+        font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5px;
+
     color: #ffffff;
     }
 }
 
+.priority-access-text{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 3rem;
+}
 
+.priority-access-text-sub{
+  width: 450px;
+  margin: auto;
+  padding-top: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.5px;
+
+}
+.line-break{
+  width: 200px;
+  height: .02rem;
+  border: solid .02rem #351d8a;
+  margin: auto;
+  margin-top: 4.2rem;
+
+}
+// .priority-access-cont{
+//   width: 450px;
+//   height: 38px;
+//   font-family: 'Nunito', sans-serif;
+//   font-size: 28px;
+//   font-weight: bold;
+//   letter-spacing: 1px;
+//   text-align: center;
+//   color: #ffffff;
+//   margin: auto;
+
+// }
 
 .admit-one-image {
-    // padding-top-top: 1rem;
      width: 198px;
     height: 88px;
     margin: auto;
+    margin-top: 2.5rem;
     img{
         width: 100%;
     object-fit: contain;
     }
 }
 .logo-shadow{
-    // background-color: #ffffff;
     box-shadow: 0 5px 26px 0 #ffffff, 0 6px 5px 3px rgba(72, 46, 174, 0.5), 0 3px 0 0 rgba(0, 0, 0, 0.1);
 
 }
 
+
+.bold {
+  font-weight: bold;
+}
+
+.social-box{
+  margin: auto;
+  display: inline-block;
+  margin-right: 1.5rem;
+  margin-top: 4rem; 
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  background-image: linear-gradient(to bottom, #1dba74, #1a4f8d);
+  box-shadow: 0 20px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
+
+}
+.social-text{
+  width: 61px;
+  height: 19px;
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+
+
+}
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.unique-link-cont{
+  width: 450px;
+  height: 27px;
+  font-family: Nunito;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
 /*
  * The following styles are auto-applied to elements with
  * transition="modal" when their visibility is toggled

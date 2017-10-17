@@ -15,6 +15,7 @@ $light-box: #F4F5F5;
 $box-shadow: 0px 1px 3px 0px rgba(41, 70, 97, 0.1);
 
 $body-font: 'Nunito', sans-serif;
+$alt-font: 'Open Sans', sans-serif;
 
 @mixin background-opacity($color, $opacity: 0.3) {
     background: $color; /* The Fallback */
