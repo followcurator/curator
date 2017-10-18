@@ -115,14 +115,16 @@ export default {
     border-radius: .8rem;
     background-image: linear-gradient(to bottom, #1dba74, #1a4f8d);
     box-shadow: 0 20px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
-    &:hover{
-        background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), linear-gradient(to bottom, #1dba74, #1a4f8d);
-        box-shadow: 0 30px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
-    }
-    &:active + clicked{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), linear-gradient(to bottom, #1dba74, #1a4f8d);
-        box-shadow: 0 6px 10px 0 rgba(39, 20, 112, 0.2), 0 0 5px 0 rgba(31, 32, 34, 0.15);
-    }
+
+
+    // &:hover{
+    //     background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), linear-gradient(to bottom, #1dba74, #1a4f8d);
+    //     box-shadow: 0 30px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);
+    // }
+    // &:active + clicked{
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), linear-gradient(to bottom, #1dba74, #1a4f8d);
+    //     box-shadow: 0 6px 10px 0 rgba(39, 20, 112, 0.2), 0 0 5px 0 rgba(31, 32, 34, 0.15);
+    // }
     /*&:hover {
         opacity: 0;
         background-color: black;

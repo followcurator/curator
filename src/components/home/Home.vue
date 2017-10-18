@@ -39,7 +39,6 @@ export default {
  @import '../../styles/_variables.scss';
 
 .hero {
-    background-color: #4c31b5;
     text-align: center;
     margin-top: 10rem;
 }
@@ -60,6 +59,7 @@ export default {
     width: 21px;
     height: 21px;
     object-fit: contain;
+
  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/instagram.svg');
 }
 
@@ -67,6 +67,8 @@ export default {
     width: 21px;
     height: 21px;
     object-fit: contain;
+
+
     background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/facebook.svg');
 
 }
@@ -75,6 +77,7 @@ export default {
     width: 21px;
     height: 21px;
     object-fit: contain;
+
  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/twitter.svg');
 }
 

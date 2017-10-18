@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
+.footer-cont{
+    margin-top: 21.4rem;
+}
 .footer-text-cont {
     float: right;
     margin-top: 2.5rem;
