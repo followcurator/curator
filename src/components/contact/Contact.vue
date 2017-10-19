@@ -4,7 +4,7 @@
         <p>Sign up to reserve your spot on the waitlist!</p>
     </div>
     <div class="email-input-wrapper">
-        <input type="text" class="email-input" v-model="email" name="email" placeholder="">
+        <input type="text" class="email-input" v-model="email" name="email" placeholder="answer">
         <label class="input-label">Enter your email</label>
     </div>
         <button class="reserve-button">
@@ -55,10 +55,11 @@ export default {
     width: 35rem;
     height: 4.5rem;
     text-align: center;
-    -webkit-transition: height .35s ease-in-out;
-    transition: hieght .35s ease-in-out;
     &:hover{
-        height: 75px;
+        // top: -2rem;
+        height:  5.5rem;
+        // height: 75px;
+        // height: 75px;
     }
 
 }
@@ -95,9 +96,13 @@ export default {
     font-weight: 300;
     letter-spacing: 0.2px;
     text-align: left;
+    padding-right: 1rem;
+
+    // left: 2rem;
     color: #000000;
     box-shadow: 0 10px 15px 0 rgba(31, 32, 34, 0.3), 0 0 5px 0 rgba(31, 32, 34, 0.15);
     &:focus{
+
         border-radius: 2px;
         background-color: #ffffff;
         box-shadow: 0 30px 25px 0 rgba(39, 20, 112, 0.5), 0 0 5px 0 rgba(31, 32, 34, 0.15);

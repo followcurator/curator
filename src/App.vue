@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <reserve-modal v-show="false" @close="showModal=false"></reserve-modal>
+    <reserve-modal v-show="true" @close="showModal=false"></reserve-modal>
     <site-header>things</site-header>
     <router-view></router-view>
       <div class="left-wave"></div>

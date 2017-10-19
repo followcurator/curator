@@ -2,6 +2,8 @@
     <div class="modal-mask">
       <div class="modal-wrapper">
         <div class="modal-container">
+<!--         <div class="modal-left-wave"></div>
+        <div class="modal-right-wave"></div> -->
           <div class="modal-header">
             <div class="small-logo logo-shadow"></div>
           </div>
@@ -29,22 +31,22 @@
           <div class="modal-footer">
             <div class="social-links-cont">
                 <div class="social-box">
-                  <div class="facebook"></div>
-                  <div class="social-text">share</div>
+                  <div class="modal-facebook"></div>
+                  <div class="social-text">SHARE</div>
                     
                 </div>
                  <div class="social-box">
-                     <div class="twitter"></div>
+                     <div class="modal-twitter"></div>
                   <div class="social-text">tweet</div>
                     
                 </div>
                   <div class="social-box">
-                     <div class="email"></div>
+                     <div class="modal-email"></div>
                   <div class="social-text">share</div>
                     
                 </div>
                  <div class="social-box">
-                     <div class="instagram"></div>
+                     <div class="modal-instagram"></div>
                   <div class="social-text">share</div>
                     
                 </div>
@@ -97,12 +99,13 @@ export default {
 
 .modal-container {
   height: 90%;
-  width: 85rem;
+  width: 83%;
   margin: auto;
   background-color: #593cbe;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
+  // background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/modal-leftwave.svg');
 
 }
 
@@ -123,7 +126,7 @@ export default {
 }
 
 .people-ahead-cont{
-    width: 607px;
+    width: 71%;
     height: 57px;
     margin: auto;
 .people-ahead-text{
@@ -135,11 +138,24 @@ export default {
     }
 }
 
+
+.modal-left-wave {
+  width: 85rem;
+  height: 90%;
+  object-fit: contain;
+  // background-image: linear-gradient(131deg, #835fdc, #4c31b5);
+  position: absolute;
+  z-index: -1;
+  left: 30px;
+  background-size: cover;
+  background-color: black;
+  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/modal-leftwave.svg');
+}
 .people-behind-cont{
-    width: 196px;
+    width: 37%;
     height: 22px;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1.3%;
     .people-behind-text{
         font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -169,7 +185,7 @@ export default {
 }
 .line-break{
   width: 200px;
-  height: .02rem;
+  height: 0.02rem;
   border: solid .02rem #351d8a;
   margin: auto;
   margin-top: 4.2rem;
@@ -204,6 +220,13 @@ export default {
 }
 
 
+.email {
+    width: 20px;
+  height: 16px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -223,6 +246,11 @@ export default {
 .social-text{
   width: 61px;
   height: 19px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
   font-family: Nunito;
   font-size: 14px;
   font-weight: 900;
