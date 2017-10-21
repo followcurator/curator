@@ -14,16 +14,14 @@
                 <div class="people-behind-cont"> 
                 <p class="people-behind-text alt-font"><span class="bold">1,560</span> People behind you</p>
             </div>
-            
             <div class="admit-one-cont">
                 <div class="admit-one-image">
-                    <img src="https://s3.us-east-2.amazonaws.com/follow-curator/ticket%403x.png">
+                    <img src="https://s3.us-east-2.amazonaws.com/follow-curator/ticket%403x-min.png">
                 </div>
                 <p class="reservation-text open-sans">This reservation is held for [%usergiven_email%]. Is this not you?</p> 
             </div>
             <div class="line-break"></div>
             <div class="priority-access-cont">
-
                 <h1 class="priority-access-text">Interested in priority access?</h1>
                 <p class="priority-access-text-sub">Get early be referring your friends. The more friends that join, the sooner you’ll get access.</p>
             </div>
@@ -32,7 +30,7 @@
             <div class="social-links-cont">
                 <div class="social-box">
                   <div class="modal-facebook"></div>
-                  <div class="social-text">SHARE</div>
+                  <div class="social-text">sahre</div>
                     
                 </div>
                  <div class="social-box">
@@ -42,7 +40,7 @@
                 </div>
                   <div class="social-box">
                      <div class="modal-email"></div>
-                  <div class="social-text">share</div>
+                  <div class="social-text">email</div>
                     
                 </div>
                  <div class="social-box">
@@ -98,8 +96,9 @@ export default {
 }
 
 .modal-container {
-  height: 90%;
+  height: 78.1%;
   width: 83%;
+  max-width: 850px;
   margin: auto;
   background-color: #593cbe;
   border-radius: 2px;
@@ -126,8 +125,8 @@ export default {
 }
 
 .people-ahead-cont{
-    width: 71%;
-    height: 57px;
+    width: 73%;
+    height: 7%;
     margin: auto;
 .people-ahead-text{
     font-family: Nunito;
@@ -138,24 +137,11 @@ export default {
     }
 }
 
-
-.modal-left-wave {
-  width: 85rem;
-  height: 90%;
-  object-fit: contain;
-  // background-image: linear-gradient(131deg, #835fdc, #4c31b5);
-  position: absolute;
-  z-index: -1;
-  left: 30px;
-  background-size: cover;
-  background-color: black;
-  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/modal-leftwave.svg');
-}
 .people-behind-cont{
     width: 37%;
     height: 22px;
     margin: auto;
-    margin-top: 1.3%;
+    margin-top: 1rem;
     .people-behind-text{
         font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -164,6 +150,7 @@ export default {
     color: #ffffff;
     }
 }
+
 
 .priority-access-text{
     font-family: 'Nunito', sans-serif;
@@ -189,26 +176,12 @@ export default {
   border: solid .02rem #351d8a;
   margin: auto;
   margin-top: 4.2rem;
-
 }
-// .priority-access-cont{
-//   width: 450px;
-//   height: 38px;
-//   font-family: 'Nunito', sans-serif;
-//   font-size: 28px;
-//   font-weight: bold;
-//   letter-spacing: 1px;
-//   text-align: center;
-//   color: #ffffff;
-//   margin: auto;
-
-// }
 
 .admit-one-image {
-     width: 198px;
-    height: 88px;
+    width: 198px;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     img{
         width: 100%;
     object-fit: contain;
@@ -247,11 +220,11 @@ export default {
   width: 61px;
   height: 19px;
   font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: 900;
   letter-spacing: 2px;
   text-align: center;
-  font-family: Nunito;
   font-size: 14px;
   font-weight: 900;
   letter-spacing: 2px;
@@ -274,6 +247,31 @@ export default {
   letter-spacing: 0.5px;
   text-align: center;
   color: #ffffff;
+}
+
+
+
+.modal-left-wave {
+  width: 85rem;
+  height: 90%;
+  object-fit: contain;
+  // background-image: linear-gradient(131deg, #835fdc, #4c31b5);
+  position: absolute;
+  z-index: -1;
+  left: 30px;
+  background-size: cover;
+  background-color: black;
+  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/modal-leftwave.svg');
+}
+
+.modal-email {
+  position: relative;
+  top: 25%;
+  width: 20px;
+  height: 16px;
+  object-fit: contain;
+  // background-color: #ffffff;
+  background-image: url('https://s3.us-east-2.amazonaws.com/follow-curator/modal-email.svg');
 }
 /*
  * The following styles are auto-applied to elements with
