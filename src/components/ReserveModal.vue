@@ -6,6 +6,7 @@
         <div class="modal-right-wave"></div> -->
           <div class="modal-header">
             <div class="small-logo logo-shadow"></div>
+            <div class="close-button"></div>
           </div>
           <div class="modal-body">
             <div class="people-ahead-cont">
@@ -18,7 +19,7 @@
                 <div class="admit-one-image">
                     <img src="https://s3.us-east-2.amazonaws.com/follow-curator/ticket%403x-min.png">
                 </div>
-                <p class="reservation-text open-sans">This reservation is held for [%usergiven_email%]. Is this not you?</p> 
+                <p class="reservation-text open-sans">This reservation is held for [%usergiven_email%]. <span style="text-dec">Is this not you?</span></p> 
             </div>
             <div class="line-break"></div>
             <div class="priority-access-cont">
@@ -30,7 +31,7 @@
             <div class="social-links-cont">
                 <div class="social-box">
                   <div class="modal-facebook"></div>
-                  <div class="social-text">sahre</div>
+                  <div class="social-text">share</div>
                     
                 </div>
                  <div class="social-box">
@@ -96,7 +97,7 @@ export default {
 }
 
 .modal-container {
-  height: 78.1%;
+  height: 85%;
   width: 83%;
   max-width: 850px;
   margin: auto;
@@ -122,6 +123,17 @@ export default {
 }
 .modal-header {
     padding-top: .62rem;
+}
+.close-button{
+  width: 5rem;
+  float: right;
+  height: 5rem;
+  background-repeat: no-repeat;
+  // margin: auto;
+  margin-top: 3rem;
+  // background-color: #ffffff;
+  // box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.7), 0 3px 17px 0 #ffffff, 0 4px 3px 2px rgba(72, 46, 174, 0.5), 0 2px 0 0 rgba(0, 0, 0, 0.1);
+  background-image: url("https://s3.us-east-2.amazonaws.com/follow-curator/close.svg");
 }
 
 .people-ahead-cont{
